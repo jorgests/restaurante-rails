@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>VotaPrato</title>
+  <title>Programa de Restaurante</title>
+  <%= stylesheet_link_tag 'scaffold' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<%= menu_principal %>
+<p style="color: green"><%= flash[:notice] %></p>
+<p style="color: red"><%= flash[:error] %></p>
 <%= yield %>
-
+<script type="text/javascript">
+  <%=yield :js %>
+</script>
 </body>
 </html>

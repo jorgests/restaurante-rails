@@ -1,0 +1,27 @@
+<h1>Listagem de Comentários</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Conteudo</th>
+      <th>Comentavel</th>
+      <th>Comentavel type</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @comentarios.each do |comentario| %>
+      <tr>
+        <td><%= comentario.conteudo %></td>
+        <td><%= comentario.comentavel_id %></td>
+        <td><%= comentario.comentavel_type %></td>
+        <td><%= link_to 'Mostrar', comentario %></td>
+        <td><%= link_to 'Editar', edit_comentario_path(comentario) %></td>
+        <td><%= link_to 'Excluir', comentario, method: :delete, data: { confirm: 'Confirma exclusão?' } %></td>
+      </tr>
+    <%= end %>
+  </tbody>
+</table>
+<br>
+<%= link_to 'Novo', new_comentario_path %>

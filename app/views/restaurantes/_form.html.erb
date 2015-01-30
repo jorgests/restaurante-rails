@@ -1,0 +1,9 @@
+<%= @restaurante.errors.full_messages %>
+
+<%= form_for :restaurante, url: { action: 'create' } do |f| %>
+  Nome: <%= f.text_field :nome %>
+  Endereço: <%= f.text_field :endereco %>
+  Especialidade: <%= f.text_field :especialidade %>
+
+  <%=submit_tag 'Criar' %>
+<% end %>

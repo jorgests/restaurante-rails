@@ -1,0 +1,14 @@
+<h1>Cardápio</h1>
+<table>
+  <tr>
+    <th>Nome</th>
+  </tr>
+  <% @pratos.each do |prato| %>
+    <tr>
+      <td><%= prato.nome %></td>
+    </tr>
+  <% end %>
+</table>
+<br/>
+<%=  %>
+<%= link_to 'Novo', {action: 'new'} %>
