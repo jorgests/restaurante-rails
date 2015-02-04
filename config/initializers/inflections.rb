@@ -16,4 +16,5 @@
 # end
 ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'qualificacao', 'qualificacoes'
+  inflect.irregular 'fornecedor', 'fornecedores'
 end

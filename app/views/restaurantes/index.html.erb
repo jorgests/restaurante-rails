@@ -1,10 +1,11 @@
 <h1>Listagem de Restaurantes</h1>
 <table>
-  <tr>
+  <thead>
     <th>Nome</th>
     <th>Endereço</th>
     <th>Especialidade</th>
-  </tr>
+    <th colspan="3"></th>
+  </thead>
   <% @restaurantes.each do |restaurante| %>
     <tr>
       <td><%= restaurante.nome %></td>
@@ -19,5 +20,4 @@
   <% end %>
 </table>
 <br/>
-<%=  %>
 <%= link_to 'Novo', {action: 'new'} %>

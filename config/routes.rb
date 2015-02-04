@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resources :fornecedores
+
   resources :comentarios
 
   resources :qualificacoes
@@ -12,7 +15,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+  #   get 'products/:id' => 'catalog#view',
   # get 'hello_world' => 'hello_world#index'
 
   # get 'jorge', to: proc{ |env| [200,{"Content-Type" => "text/html"} ,["Ola Jorge tu e foda"] ] }

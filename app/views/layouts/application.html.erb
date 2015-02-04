@@ -8,7 +8,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= menu_principal %>
+  <table rules="all" align="left" frame="box" bgcolor="#D8D8D8" width="1500" >
+    <thead>
+      <tr>
+        <th>
+          <%= menu_principal %>
+        </th>
+      </tr>
+    </thead>
+  </table>
+<br>
+<br>
+<br>
 <p style="color: green"><%= flash[:notice] %></p>
 <p style="color: red"><%= flash[:error] %></p>
 <%= yield %>

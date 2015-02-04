@@ -1,8 +1,9 @@
 module ApplicationHelper
   def menu_principal
-    menu = %w(cliente qualificacao restaurante comentario)
+    menu = %w(cliente qualificacao restaurante comentario fornecedor)
     menu_principal = "<ul class='menu'>"
     menu.each do |item|
+      # require 'pry'; binding.pry
       menu_principal << "<li>" + link_to(item, :controller => item.pluralize) + "</li>"
     end
     menu_principal << "</ul>"

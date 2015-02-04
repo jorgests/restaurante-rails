@@ -1,0 +1,18 @@
+<h1>Exibindo Fornecedor</h1>
+<p>
+  <strong>Nome: </strong>
+  <%=h @fornecedor.nome %>
+</p>
+<p>
+  <strong>Endereço: </strong>
+  <%=h @fornecedor.endereco %>
+</p>
+  <table rules="all" align="left" border="3" frame="box">
+    <thead>
+      <tr>
+        <th>
+          <%= link_to "Voltar", fornecedores_path %>
+        </th>
+      </tr>
+    </thead>
+  </table>

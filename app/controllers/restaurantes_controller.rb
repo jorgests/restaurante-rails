@@ -1,7 +1,6 @@
 class RestaurantesController < ApplicationController
 
   def index
-    # require 'pry'; binding.pry
     @restaurantes = Restaurante.order("nome")
   end
 

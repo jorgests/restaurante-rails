@@ -16,6 +16,6 @@ class Restaurante < ActiveRecord::Base
   private
 
   def primeira_letra_deve_ser_maiuscula
-    errors.add('nome', 'A primeira letra deve ser maiuscula') unless nome =~/[A-Z].*/
+    errors.add('nome', 'da primeira letra deve ser maiuscula') unless nome =~/^[A-Z].*/
   end
 end
